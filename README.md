@@ -17,6 +17,12 @@ An end-to-end commercial analytics and machine learning system that transforms s
 4. **Financial Threshold Calibration (`src/evaluate.py`):** Computes exact net retention revenue using an expected value loss matrix rather than raw accuracy.
 5. **Interactive Dashboard (`app.py`):** Streamlit web application providing live retention economics modeling, cohort inspections, and single-subscriber risk scoring.
 
+# Telco Customer Retention & Revenue Optimization Engine
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://telco-churn-risk-engine.streamlit.app/)
+
+🔗 **Live Interactive App:** [telco-churn-risk-engine.streamlit.app](https://telco-churn-risk-engine.streamlit.app/)
+
 ## Project Structure
 ```text
 ├── data/
