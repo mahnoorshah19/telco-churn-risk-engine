@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 
-def compute_customer_segments(data: pd.DataFrame, n_clusters: int = 3, random_state: int = 42) -> tuple[pd.DataFrame, pd.DataFrame, KMeans, StandardScaler]:
+def compute_customer_segments(df: pd.DataFrame, n_clusters: int = 3, random_state: int = 42) -> tuple[pd.DataFrame, pd.DataFrame, KMeans, StandardScaler]:
     """
     Applies K-Means clustering on tenure and spend metrics to identify subscriber personas.
     """

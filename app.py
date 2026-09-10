@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 from src.data_loader import load_and_preprocess_data
 from src.segmentation import compute_customer_segments
-from src.model import build_training_pipeline
+from src.model import training_pipeline
 from src.evaluate import optimize_decision_threshold
 
 st.set_page_config(page_title="Telco Customer Retention Engine", layout="wide")
@@ -20,7 +20,7 @@ def get_processed_data():
 @st.cache_resource
 def get_model_and_segments(df):
     df_seg, summary, _, _ = compute_customer_segments(df)
-    pipeline, X_test, y_test = build_training_pipeline(df)
+    pipeline, X_test, y_test = training_pipeline(df)
     return df_seg, summary, pipeline, X_test, y_test
 
 df = get_processed_data()

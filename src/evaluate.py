@@ -51,8 +51,8 @@ def run_evaluation_suite(pipeline, X_test: pd.DataFrame, y_test: pd.Series):
 if __name__ == "__main__":
     import joblib
     from src.data_loader import load_and_preprocess_data
-    from src.model import build_training_pipeline
+    from src.model import training_pipeline
     
     df = load_and_preprocess_data()
-    pipeline, X_test, y_test = build_training_pipeline(df)
+    pipeline, X_test, y_test = training_pipeline(df)
     run_evaluation_suite(pipeline, X_test, y_test)

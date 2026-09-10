@@ -13,7 +13,6 @@ env/
 .ipynb_checkpoints/
 
 # Data & Output Models
-data/*.csv
 models/*.joblib
 
 # OS generated
