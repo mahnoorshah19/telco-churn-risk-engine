@@ -1,0 +1,21 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual Environments
+venv/
+env/
+.venv/
+
+# Jupyter Checkpoints
+.ipynb_checkpoints/
+
+# Data & Output Models
+data/*.csv
+models/*.joblib
+
+# OS generated
+.DS_Store
+Thumbs.db
